@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+ul {
+	display: flex;
+	padding: 0;
+	list-style: none;
+}
+
+li:not(li:first-child)::before {
+	content: '|';
+	margin: 0 8px;
+}
+
+table,th,td {
+	border: 1px solid #ccc;
+
+}
+th {
+	/* padding: 10px 12px; */
+	height: 50px;
+	background-color: rgba(200, 247, 50, 0.7);
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 15px;
+}
+td {
+	font-size: 14px;
+	padding: 0 5px;
+	height: 50px;
+}
+tr:nth-child(2n) {
+	background-color: #eee;
+}
